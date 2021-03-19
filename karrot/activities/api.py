@@ -24,7 +24,7 @@ from karrot.activities.serializers import (
     ActivityUpdateSerializer, ActivitySeriesUpdateSerializer, ActivitySeriesHistorySerializer,
     FeedbackExportSerializer, FeedbackExportRenderer, ActivityTypeSerializer, ActivityTypeHistorySerializer
 )
-from karrot.places.models import PlaceStatusOld
+from karrot.places.models import PlaceStatusCategory
 from karrot.utils.mixins import PartialUpdateModelMixin
 
 
@@ -210,7 +210,9 @@ class ActivityViewSet(
     pagination_class = ActivityPagination
 
     def get_queryset(self):
-        qs = self.queryset.filter(place__group__members=self.request.user, place__status=PlaceStatusOld.ACTIVE.value)
+        qs = self.queryset.filter(
+            place__group__members=self.request.user, place__status__category=PlaceStatusCategory.ACTIVE.value
+        )
         if self.action == 'list':
             # because we have participants field in the serializer
             # only prefetch on read_only actions, otherwise there are caching problems when participants get added
