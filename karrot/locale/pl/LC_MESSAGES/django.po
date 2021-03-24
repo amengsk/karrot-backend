@@ -4,7 +4,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 # 
 # Translators:
-# Tomasz Ploch <tomasz.ploch@foodsharing.pl>, 2020
+# Tomasz Ploch <tomasz.ploch@foodsharing.pl>, 2021
 # 
 #, fuzzy
 msgid ""
@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "PO-Revision-Date: 2017-02-24 04:04+0000\n"
-"Last-Translator: Tomasz Ploch <tomasz.ploch@foodsharing.pl>, 2020\n"
+"Last-Translator: Tomasz Ploch <tomasz.ploch@foodsharing.pl>, 2021\n"
 "Language-Team: Polish (https://www.transifex.com/yunity-1/teams/68631/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,7 +31,7 @@ msgstr "Odbiór"
 
 #: karrot/activities/activity_types.py:7
 msgid "Distribution"
-msgstr ""
+msgstr "Wymiana"
 
 #: karrot/activities/activity_types.py:8
 msgid "Event"
@@ -79,7 +79,7 @@ msgstr "Dziś wieczorem"
 
 #: karrot/activities/templates/activity_notification.html.jinja2:194
 msgid "The day is not over, there are still activities to be done!"
-msgstr ""
+msgstr "Dzień jeszcze się nie skończył! Możesz wciąż dołączyć do aktywności."
 
 #: karrot/activities/templates/activity_notification.html.jinja2:197
 #: karrot/activities/templates/activity_notification.html.jinja2:225
